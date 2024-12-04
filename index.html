@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>欢迎来到 EFH5 ！</title>
+	<link rel="stylesheet" type="text/css" href="regular.css">
+	<script type="text/javascript" language="JavaScript" src="jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" language="JavaScript" src="regular.js"></script>
+</head>
+<body>
+	<header class="normal-header">
+		<img src="media/icon-square.png" class="normal-header-icon">
+		<div class="normal-header-main">
+			<div class="normal-header-left">
+				<font class="normal-header-left-t1">EFH5</font><br>
+				<font class="normal-header-left-t2">Easy F HTML 5</font>
+			</div>
+			<div class="normal-header-right">
+				<b>EFH5</b>
+			</div>
+		</div>
+	</header>
+<div class="main-flex">
+<div class="main-box">
+	<section id="section0">
+		<style type="text/css">
+			:root{
+				--s: 6;
+				--h: 64;
+				--speed: 1.5s;
+			}
+			.g-container{
+				width: 90%;
+				margin: 60px auto;
+				height: calc(var(--h) * 1px);
+				font-size: 3em;
+				color: #AA00FF;
+				font-weight: 600;
+				overflow: hidden;
+				line-height: 64px;
+				text-shadow: 0 0 20px #FFFFFF;
+			}
+			.g-ul{
+				text-align: center;
+				margin-top: 1px;
+				display: flex;
+				flex-direction: column;
+				animation: move calc(var(--speed) * var(--s)) steps(var(--s)) infinite;
+			}
+			.g-li{
+				width: 100%;
+				overflow: hidden;
+				animation: liMove calc(var(--speed)) infinite;
+			}
+			@keyframes move{
+				0%{
+					transform: translate(0, 0);
+				}
+				100%{
+					transform: translate(0, calc(var(--s) * var(--h) * -1px));
+				}
+			}
+			@keyframes liMove{
+				0%{
+					transform: translate(0, 0);
+				}
+				80%,
+				100%{
+					 transform: translate(0, calc(var(--h) * -1px));
+				}
+			}
+			.g-top{
+				font-size: 5em;
+				margin: 50px 20px;
+				font-weight: 900;
+				color: #3264FF;
+				text-shadow: 1px 1px 2px #FFFFFF,1px 1px 5px #FFFFFF,1px 1px 10px #FFFFFF;
+			}
+		</style>
+		<p class="g-top">EFH5，<br></p>
+		<div class="g-container">
+			<ul style="--s: 6" class="g-ul">
+				<li class="g-li">轻松开始</li>
+				<li class="g-li">无需部署</li>
+				<li class="g-li">自由设计</li>
+				<li class="g-li">开放，开源，纯净</li>
+				<li class="g-li">用途广泛</li>
+				<li class="g-li">人人可用</li>
+				<!-- 末尾补一个首条数据 -->
+				<li class="g-li">轻松开始</li>
+			</ul>
+		</div>
+	</section>
+	<section id="section1">
+		<h1>因此，选择EFH5</h1>
+		<article style="min-width: 300px;">
+			<div class="introduct-box" style="background-image: url(media/homepage_bgimg_1);">
+				<h1 class="introduct-title">无门槛<br>人人可开始</h1>
+				<div class="introduct-text-box">
+					<font class="introduct-text">无需了解如何编写代码，<br>即可通过EFH5搭建属于自己的页面。<br></font>
+					<font  class="introduct-text" style="font-size: 0.5em;text-shadow: none;">*EFH5使用时需对HTML语音编写的文件进行部分编辑。</font>
+				</div>
+			</div>
+			<div class="introduct-box" style="background-image: url(media/homepage_bgimg_2);">
+				<h1 class="introduct-title-">轻松部署<br>无需环境</h1>
+				<div class="introduct-text-box-">
+					<font class="introduct-text">使用EFH5不需要搭建任何环境，<br>只要有一个现代浏览器即可。<br><font  class="introduct-text" style="font-size: 0.5em;text-shadow: none;">*“现代浏览器”指采用Chromium或Gecko等内核的浏览器。</font></font>
+				</div>
+			</div>
+			<div class="introduct-box" style="background-image: url(media/homepage_bgimg_3);">
+				<h1 class="introduct-title">开源<br>放心用</h1>
+				<div class="introduct-text-box">
+					<font class="introduct-text">EFH5采用GNU AGPL V3协议，<br>任何人都可以为此项目贡献自己的力量。<br></font>
+					<font  class="introduct-text" style="font-size: 0.5em;text-shadow: none;">*“GNU AGPL V3”指<a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007</a></font>
+				</div>
+			</div>
+			<div class="introduct-box" style="background-image: url(media/homepage_bgimg_2);">
+				<h1 class="introduct-title-">用途广泛<br>处处可用</h1>
+				<div class="introduct-text-box-">
+					<font class="introduct-text">无论是作为项目文档、个人博客还是一个不怎么有技术的官网，<br>EFH5都能胜任。<br><font  class="introduct-text" style="font-size: 0.5em;text-shadow: none;">*“现代浏览器”指采用Chromium或Gecko等内核的浏览器。</font></font>
+				</div>
+			</div>
+			<p></p>
+		</article>
+		<style type="text/css">
+			.introduct-box{
+				background-size: cover;
+				height: 450px;
+			}
+			.introduct-title{
+				float: right;
+				text-align: right !important;
+				margin-right: 10%;
+				text-shadow: 0 0 10px #000000;
+				color: #FFFFFF !important;
+				margin-bottom: 0px;
+				margin-top: 0px;
+				clear: both;
+			}
+			.introduct-text-box{
+				float: right;
+				text-align: right;
+				margin-right: 15%;
+				text-shadow: 0 0 10px #FFFFFF;
+				color: #FFFFFF;
+				background-color: rgba(0, 0, 0, 0.5);
+				clear: both;
+				max-width: 50%;
+			}
+			.introduct-text{
+				text-indent: 0em;
+				background: linear-gradient(90deg, #ff3c41, #fc0, #0ebeff);
+				background-size: 0 3px;
+				background-repeat: no-repeat;
+				background-position: 0 100%;
+				transition: 1s all;
+			}
+			.introduct-text:hover{
+				background-size: 100% 3px;
+			}
+			.introduct-title-{
+				float: left;
+				text-align: left !important;
+				margin-left: 10%;
+				text-shadow: 0 0 10px #000000;
+				color: #FFFFFF !important;
+				margin-bottom: 10px;
+				clear: both;
+				background: linear-gradient(90deg, #ff3c41, #fc0, #0ebeff);
+				background-size: 0 3px;
+				background-repeat: no-repeat;
+				background-position: 0 100%;
+				transition: 1s all;
+			}
+			.introduct-text-box-{
+				float: left;
+				text-align: left;
+				margin-left: 15%;
+				text-shadow: 0 0 10px #FFFFFF;
+				color: #FFFFFF;
+				background-color: rgba(0, 0, 0, 0.5);
+				clear: both;
+				max-width: 50%;
+			}
+		</style>
+	</section>
+	<section id="section2">
+		<h1>导航</h1>
+		<div class="part-introduction">
+			<a href="docs/introduction.html"><div class="part-introduction-box">
+				<i class="fas fa-book part-introduction-icon"></i>
+				<h2 class="part-introduction-title">介绍</h2>
+				<p class="part-introduction-text">这是什么？EFH5？看一下。<br>这是什么？EFH5？试一下。</p>
+			</div></a>
+			<a href="docs/manual/index.html"><div class="part-introduction-box">
+				<i class="fas fa-book-bookmark part-introduction-icon"></i>
+				<h2 class="part-introduction-title">使用手册</h2>
+				<p class="part-introduction-text">是大佬的话<br>不看这个也一定会用吧！</p>
+			</div></a>
+			<div class="part-introduction-box">
+				<i class="fas fa-file part-introduction-icon"></i>
+				<h2 class="part-introduction-title">资源</h2>
+				<p class="part-introduction-text">虽然有这个东西<br>但是还是让你自己找吧</p>
+			</div>
+			<a href="docs/list.html"><div class="part-introduction-box">
+				<i class="fas fa-list part-introduction-icon"></i>
+				<h2 class="part-introduction-title">贡献者名单</h2>
+				<p class="part-introduction-text">快来看看<br>都是谁在为这个项目做贡献</p>
+			</div></a>
+			<a href="http://github.com"><div class="part-introduction-box">
+				<i class="fab fa-github part-introduction-icon"></i>
+				<h2 class="part-introduction-title"><i class="fas fa-link"></i>GitHub</h2>
+				<p class="part-introduction-text">都来这了<br>应该不用我告诉你这是什么吧</p>
+			</div></a>
+		</div>
+		<style type="text/css">
+			.part-introduction{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			.part-introduction-box{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 250px;
+				height: 200px;
+				margin: 20px 10px;
+				float: left;
+				background-color: #f0ffff;
+				border-radius: 30px;
+				box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12), 5px 5px 5px rgba(0, 0, 0, 0.24);
+			}
+			.part-introduction>a:hover{background: none}
+			.part-introduction-box:hover{
+				box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12), 5px 5px 5px rgba(0, 0, 0, 0.24), 0px 0px 5px rgba(0, 0, 0, 0.24);
+			}
+			.part-introduction-icon{
+				color: #00008b;
+				margin: 5px;
+				font-size: 90px;
+				text-shadow: 1px 1px 5px rgb(0 0 0 0.24);
+			}
+			.part-introduction-title{
+				font-size: 40px !important;
+				color: #3F48CC !important;
+				margin: 0;
+				font-weight: 700 !important;
+			}
+			.part-introduction-text{
+				margin: 0px;color: #125;text-align: center;
+			}
+		</style>
+	</section>
+	<section id="section3"><article>
+		<h1>部分组件介绍</h1>
+		<h2>顶部导航</h2>
+		<p>在页面顶部的导航，可用用来放很多东西。</p>
+		<h2>页面内容导航</h2>
+		<p>在侧边的菜单，点一下就可用展开。</p>
+		<p>用来作为目录似乎很不错。</p>
+		<h2>配色模式选择</h2>
+		<p>可用用来实现夜间模式、护眼模式之类的。</p>
+		<h2>回到顶部</h2>
+		<p>就是回到顶部，点一下就可以。</p>
+		<h2>信息盒子</h2>
+				<div class="ib ib-yellow"><div class="ib-fi ib-yellow-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>信息盒子</b></big><br>是的，这是一个信息盒子。<br>就长这样。</div></a></div>
+				<div class="ib ib-purple-d"><div class="ib-fi ib-purple-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>当然，也可以<font class="ib-purple-d-hl">突出显示</font></b></big><br>这是紫色的信息盒子。<font class="ib-purple-d-hl">这几个字</font>被highlight了~</div></div>
+				<div class="ib ib-blue"><div class="ib-fi ib-blue-h"><i class="fas fa-exclamation-triangle"></i></div><div class="ib-la"><big><b>警告: </b></big><br>信息盒子通常会占用<b>一整行</b>的空间。</div></div>
+	</article></section>
+</div>
+<div class="main-sidebox">
+	<div class="main-sidebox-section">
+		<div class="main-sidebox-section-h">EFH5</div>
+		<div class="main-sidebox-siteicon-pic"></div>
+		<p class="main-sidebox-section-text">人人都可开始的Web页面</p>
+	</div>
+	<div class="main-sidebox-section">
+		<div class="main-sidebox-section-h"><i class="fas fa-link"></i>友情链接</div>
+		<script>sidebox_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+	</div>
+</div>
+</div>
+	<footer>
+		<div class="footer-linear-gradient"></div>
+		<div class="footer-top">EFH5</div>
+		<div class="footer-main">
+			<div class="footer-section">
+				<div class="footer-section-h"><i class="fas fa-list"></i>公告</div>
+				<script>footer_notice();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+			</div>
+			<div class="footer-section">
+				<div class="footer-section-h"><i class="fas fa-link"></i>友情链接</div>
+				<script>footer_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+			</div>
+		</div>
+		<div class="footer-bottom"><script>copyright();</script><noscript>这里需要使用 JavaScript 进行加载Copyright！<br>Copyright © 2020 Hollow.All rights reserved.<br>域空Hollow 2020 版权所有。保留所有权利。</noscript></div>
+	</footer>
+	<header class="flex-header flex-header-hide" id="FlexHeader">
+		<div class="header-main">
+			<ul class="header-left">
+				<li class="header-icon-box header-left-li">
+					<a href="index.html" title="EFH5"><img src="media/icon.png" class="header-icon"></a>
+				</li>
+				<li class="header-left-li"><a href="index.html" class="header-at">首页</a></li>
+				<li class="header-left-li"><a href="docs/introduction.html">介绍</a></li>
+				<li class="header-left-li"><a href="docs/manual/index.html">使用手册</a></li>
+				<li class="header-left-li"><a href="files/index.html">资源</a></li>
+				<li class="header-left-li"><a href="blog/index.html">博客</a></li>
+				<li class="header-left-li"><a href="https://github.com"><i class="fas fa-link"></i>Github</a></li>
+			</ul>
+		</div>
+	</header>
+	<nav class="page-nav">
+		<input type="checkbox" id="nav-chb">
+		<label for="nav-chb" class="page-nav-lable">菜单</label>
+		<div id="nav-box">
+			<ul>
+				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
+				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">特点</a></li>
+				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">导航</a></li>
+				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">组件</a></li>
+				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
+			</ul>
+		</div>
+		<script>
+			$(function() {
+				$(window).scroll(function() {
+					//为页面添加页面滚动监听事件
+					var wst = $(window).scrollTop() //滚动条距离顶端值
+					console.log("滚动条距离顶端值:" + wst)
+					var len = 4;
+					for (i = 0; i < len; i++) { //加循环
+						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
+						var next = i + 1;
+						var itemOffsetTop = $("#section" + i).offset().top;
+						console.log(i);
+						if (i === (len - 1)) {
+							var condition = itemOffsetTop <= wst;
+						} else {
+							var itemNextOffsetTop = $("#section" + next).offset().top;
+							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
+						}
+						if (condition) { //判断滚动条位置
+							$('a').removeClass("page-nav-at"); //清除c类
+							$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
+						}
+					}
+				})
+				$('#nav a').click(function() {
+					$('#nav a').removeClass("c");
+					$(this).addClass("c");
+				});
+			});
+		</script>
+		<a href="#" class="back-to-top"></a>
+	</nav>
+</body>
+</html>
