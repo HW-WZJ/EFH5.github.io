@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>扩展 - EFH5</title>
+	<link rel="stylesheet" type="text/css" href="../../regular.css">
+	<script type="text/javascript" language="JavaScript" src="../../jquery-3.7.1.min.js"></script>
+	<script type="text/javascript" language="JavaScript" src="../../regular.js"></script>
+</head>
+<body>
+	<header class="normal-header">
+		<img src="../../media/icon-square.png" class="normal-header-icon">
+		<div class="normal-header-main">
+			<div class="normal-header-left">
+				<font class="normal-header-left-t1">EFH5</font><br>
+				<font class="normal-header-left-t2">Easy F HTML 5</font>
+			</div>
+			<div class="normal-header-right">
+				<b>EFH5</b>
+			</div>
+		</div>
+	</header>
+<div class="main-flex">
+<div class="main-box">
+	<section id="section0">
+		<div class="section0-box1">
+			<div class="s-b-1-1">EFH5</div>
+			<div class="s-b-1-2">Easy F HTML 5</div>
+		</div>
+		<div class="section0-box2">
+			<div class="s-b-2-1"><b>addition</b></div>
+			<div class="s-b-2-2">扩展</div>
+		</div>
+		<div class="section0-bottom">EFH5的更多内容</div>
+	</section>
+		<div class="setting-box">
+			<input type="checkbox" id="darkmode-chb" class="setting-chb">
+			<label for="darkmode-chb" class="darkmode-chb-lable setting-chb-lable"></label>
+			<input type="checkbox" id="greenmode-chb" class="setting-chb">
+			<label for="greenmode-chb" class="greenmode-chb-lable setting-chb-lable"></label>
+		</div>
+	<section id="section1">
+		<article>
+			<p>CSS部分建议整合进<a href="https://github.com/Hollow-YK/EFH5/blob/main/regular.css">regular.css</a>，JavaScript部分建议整合进<a href="https://github.com/Hollow-YK/EFH5/blob/main/regular.js">regular.js</a>图片建议置于/media文件夹内。若有更改，请自行适配。</p>
+		</article>
+		<h1>目录</h1>
+		<h2>扩展部件</h2>
+		<article>
+			<p><a href="#section2-1">回到顶部</a></p>
+			<p><a href="#section2-2">页首</a></p>
+			<p><a href="#section2-3">页脚</a></p>
+			<p><a href="#section2-4">导航栏（上）</a></p>
+			<p><a href="#section2-5">索引</a></p>
+			<p><a href="#section2-6">侧边栏（右）</a></p>
+		</article>
+	</section>
+	<section id="section2">
+		<h1>扩展部件</h1>
+		<h2>推荐位置</h2>
+		<pre><code>
+&lt;body&gt;
+	&lt;!-- header --&gt;
+&lt;div class="main-flex"&gt;
+&lt;div class="main-box"&gt;
+	&lt;!-- section --&gt;
+&lt;/div&gt;
+	&lt;!-- main-sidebox --&gt;
+&lt;/div&gt;
+	&lt;!-- footer --&gt;
+	&lt;!-- flex-header --&gt;
+	&lt;!-- page-nav --&gt;
+	&lt;!-- back-to-top --&gt;
+&lt;/body&gt;
+		</code></pre>
+		<h2 id="section2-1">回到顶部</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/back_to_top.css">back_to_top.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/back_to_top.png">back_to_top.png</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/back_to_top_hover.png">back_to_top_hover.png</a>
+				<p>HTML代码：</p>
+				<pre><code>
+&lt;a href="#" class="back-to-top"&gt;&lt;/a&gt;
+				</code></pre>
+			</article>
+		<h2 id="section2-2">页首</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/header.css">header.css</a><br>icon-square.png
+				<p>HTML代码：</p>
+				<pre><code>
+&lt;header class="normal-header"&gt;
+	&lt;img src="../../media/icon-square.png" class="normal-header-icon"&gt;
+	&lt;div class="normal-header-main"&gt;
+		&lt;div class="normal-header-left"&gt;
+			&lt;font class="normal-header-left-t1"&gt;标题&lt;/font&gt;&lt;br&gt;
+			&lt;font class="normal-header-left-t2"&gt;副标题&lt;/font&gt;
+		&lt;/div&gt;
+		&lt;div class="normal-header-right"&gt;
+			&lt;b&gt;缩写&lt;/b&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
+				</code></pre>
+			</article>
+		<h2 id="section2-3">页脚</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/footer.css">footer.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/footer.js">footer.js</a>
+				<p>HTML代码：</p>
+				<pre><code>
+&lt;footer&gt;
+	&lt;div class="footer-linear-gradient"&gt;&lt;/div&gt;
+	&lt;div class="footer-top"&gt;网站名称&lt;/div&gt;
+	&lt;div class="footer-main"&gt;
+		&lt;div class="footer-section"&gt;
+			&lt;div class="footer-section-h"&gt;&lt;i class="fas fa-list"&gt;&lt;/i&gt;公告&lt;/div&gt;
+			&lt;script&gt;footer_notice();&lt;/script&gt;&lt;noscript&gt;这里需要使用 JavaScript 进行加载！&lt;/noscript&gt;
+		&lt;/div&gt;
+		&lt;div class="footer-section"&gt;
+			&lt;div class="footer-section-h"&gt;&lt;i class="fas fa-link"&gt;&lt;/i&gt;友情链接&lt;/div&gt;
+			&lt;script&gt;footer_links();&lt;/script&gt;&lt;noscript&gt;这里需要使用 JavaScript 进行加载！&lt;/noscript&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="footer-bottom"&gt;&lt;script&gt;copyright();&lt;/script&gt;&lt;noscript&gt;这里需要使用 JavaScript 进行加载Copyright！&lt;br&gt;备用版权声明&lt;/noscript&gt;&lt;/div&gt;
+&lt;/footer&gt;
+				</code></pre>
+			</article>
+		<h2 id="section2-4">导航栏（上）</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/flex_header.css">flex_header.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/flex_header.js">flex_header.js</a><br>icon.png
+				<p>HTML代码：</p>
+				<pre><code>
+&lt;header class="flex-header flex-header-hide" id="FlexHeader"&gt;
+	&lt;div class="header-main"&gt;
+		&lt;ul class="header-left"&gt;
+			&lt;li class="header-icon-box header-left-li"&gt;
+				&lt;a href="index.html" title="网站名称"&gt;&lt;img src="../../media/icon.png" class="header-icon"&gt;&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="header-left-li"&gt;&lt;a href="index.html"&gt;首页&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="header-left-li"&gt;&lt;a href="页面URL，建议使用相对路径"&gt;页面名称&lt;/a&gt;&lt;/li&gt;
+			&lt;！-- 可以多添加几个，建议不要超过5个 --&gt;
+			&lt;li class="header-left-li"&gt;&lt;a href="外链URL"&gt;&lt;i class="fas fa-link"&gt;&lt;/i&gt;外链名称&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
+				</code></pre>
+			</article>
+		<h2 id="section2-5">索引</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/page_nav.css">page_nav.css</a>
+				<p>HTML代码：</p>
+				<pre><code>
+&lt;nav class="page-nav"&gt;
+	&lt;input type="checkbox" id="nav-chb"&gt;
+	&lt;label for="nav-chb" class="page-nav-lable"&gt;菜单&lt;/label&gt;
+	&lt;div id="nav-box"&gt;
+		&lt;ul&gt;
+			&lt;li class="page-nav-li"&gt;&lt;a href="#section0" id="pnav0" class="page-nav-a page-nav-at"&gt;页首&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="page-nav-li"&gt;&lt;a href="#section1" id="pnav1" class="page-nav-a"&gt;第一部分标题&lt;/a&gt;&lt;/li&gt;
+			&lt;li class="page-nav-li"&gt;&lt;a href="#section2" id="pnav2" class="page-nav-a"&gt;第二部分标题&lt;/a&gt;&lt;/li&gt;
+			&lt;！-- 以此类推，可以多添加几个 --&gt;
+			&lt;li class="page-nav-li"&gt;&lt;a href="#" class="page-nav-a"&gt;回到顶部&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/div&gt;
+	&lt;script&gt;
+		$(function() {
+			$(window).scroll(function() {
+				//为页面添加页面滚动监听事件
+				var wst = $(window).scrollTop() //滚动条距离顶端值
+				console.log("滚动条距离顶端值:" + wst)
+				var len = 3;//这里的数字根据需要替换，有n个部分就写上n+1，如2部分就写3
+				for (i = 0; i &lt; len; i++) { //加循环
+					console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
+					var next = i + 1;
+					var itemOffsetTop = $("#section" + i).offset().top;
+					console.log(i);
+					if (i === (len - 1)) {
+						var condition = itemOffsetTop &lt;= wst;
+					} else {
+						var itemNextOffsetTop = $("#section" + next).offset().top;
+						var condition = itemOffsetTop &lt;= wst && itemNextOffsetTop &gt;= wst;
+					}
+					if (condition) { //判断滚动条位置
+						$('a').removeClass("page-nav-at"); //清除c类
+						$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
+					}
+				}
+			})
+			$('#nav a').click(function() {
+				$('#nav a').removeClass("c");
+				$(this).addClass("c");
+			});
+		});
+	&lt;/script&gt;
+				</code></pre>
+			</article>
+	</section>
+	<section id="section3">
+		<h1>快速开始</h1><p><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/infobox.css">infobox.css</a></p>
+		<article>
+			<p>Ctrl + A ，Ctrl + C ，Ctrl + V 即可。</p>
+			<p>如果想要更加详细的描述，请到<a href="../manual/index.html">使用手册/快速开始</a>页面。</p>
+		</article>
+	</section>
+	<section>
+		<div class="page-button-box">
+			<a class="page-button" href="index.html">上一篇</a>
+			<a class="page-button" href="">下一篇</a>
+		</div>
+	</section>
+</div>
+<div class="main-sidebox">
+	<div class="main-sidebox-section">
+		<div class="main-sidebox-section-h">EFH5</div>
+		<div class="main-sidebox-siteicon-pic"></div>
+		<p class="main-sidebox-section-text">人人都可开始的Web页面</p>
+	</div>
+	<div class="main-sidebox-section">
+		<div class="main-sidebox-section-h"><i class="fas fa-link"></i>友情链接</div>
+		<script>sidebox_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+	</div>
+</div>
+</div>
+	<footer>
+		<div class="footer-linear-gradient"></div>
+		<div class="footer-top">EFH5</div>
+		<div class="footer-main">
+			<div class="footer-section">
+				<div class="footer-section-h"><i class="fas fa-list"></i>公告</div>
+				<script>footer_notice();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+			</div>
+			<div class="footer-section">
+				<div class="footer-section-h"><i class="fas fa-link"></i>友情链接</div>
+				<script>footer_links();</script><noscript>这里需要使用 JavaScript 进行加载！</noscript>
+			</div>
+		</div>
+		<div class="footer-bottom"><script>copyright();</script><noscript>这里需要使用 JavaScript 进行加载Copyright！<br>Copyright © 2020 Hollow.All rights reserved.<br>域空Hollow 2020 版权所有。保留所有权利。</noscript></div>
+	</footer>
+	<header class="flex-header flex-header-hide" id="FlexHeader">
+		<div class="header-main">
+			<ul class="header-left">
+				<li class="header-icon-box header-left-li">
+					<a href="../../index.html" title="EFH5"><img src="../../media/icon.png" class="header-icon"></a>
+				</li>
+				<li class="header-left-li"><a href="../../index.html">首页</a></li>
+				<li class="header-left-li"><a href="../../docs/introduction.html">介绍</a></li>
+				<li class="header-left-li"><a href="../../manual/index.html" class="header-at">使用手册</a></li>
+				<li class="header-left-li"><a href="../../files/index.html">资源</a></li>
+				<li class="header-left-li"><a href="../../blog/index.html">博客</a></li>
+				<li class="header-left-li"><a href="https://github.com/Hollow-YK/EFH5"><i class="fas fa-link"></i>Github</a></li>
+			</ul>
+		</div>
+	</header>
+	<nav class="page-nav">
+		<input type="checkbox" id="nav-chb">
+		<label for="nav-chb" class="page-nav-lable">菜单</label>
+		<div id="nav-box">
+			<ul>
+				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
+				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">认识EFH5</a></li>
+				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">应用案例</a></li>
+				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">推荐</a></li>
+				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
+			</ul>
+		</div>
+		<script>
+			$(function() {
+				$(window).scroll(function() {
+					//为页面添加页面滚动监听事件
+					var wst = $(window).scrollTop() //滚动条距离顶端值
+					console.log("滚动条距离顶端值:" + wst)
+					var len = 4;
+					for (i = 0; i < len; i++) { //加循环
+						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
+						var next = i + 1;
+						var itemOffsetTop = $("#section" + i).offset().top;
+						console.log(i);
+						if (i === (len - 1)) {
+							var condition = itemOffsetTop <= wst;
+						} else {
+							var itemNextOffsetTop = $("#section" + next).offset().top;
+							var condition = itemOffsetTop <= wst && itemNextOffsetTop >= wst;
+						}
+						if (condition) { //判断滚动条位置
+							$('a').removeClass("page-nav-at"); //清除c类
+							$("#pnav" + i).addClass("page-nav-at"); //给当前导航加c类
+						}
+					}
+				})
+				$('#nav a').click(function() {
+					$('#nav a').removeClass("c");
+					$(this).addClass("c");
+				});
+			});
+		</script>
+		<a href="#" class="back-to-top"></a>
+	</nav>
+</body>
+</html>
