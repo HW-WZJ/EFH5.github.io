@@ -55,28 +55,35 @@ function text_print (str){
 }
 function connect_way (str){
 	switch (str){
-	case "问题反馈":
+	case "图书馆_提供书籍":
 		text_print("<font color=#ff0000;>error: no data<br></font>");
 		break;
-	case "":
-		text_print("<font color=#3264ff;>GitHub提交pr<br>E-mail:（不推荐）<br></font>");
+	case "图书馆_书籍纠错/换源":
+		text_print("<font color=#ff0000;>error: no data<br></font>");
+		break;
+	case "图书馆_简介投稿":
+		text_print("<font color=#3264ff;>GitHub提交issue（推荐）或pr（不推荐）<br>E-mail:areaxj@outlook.com（不推荐）<br><a href='http://pabbs.great-site.net/index.php/board,3.0.html'>云之境论坛交流区</a>发帖投稿（推荐）<br></font>");
 		break;
 	default:
 		text_print("<font color=#ff0000;>error: unknown str input<br></font>");
 	}
 }
 function footer_notice() {
-	text_print("人人都可开始的Web页面");
+	text_print("愿为一片净土");
 }
 function sidebox_notice() {
-	text_print("人人都可开始的Web页面");
+	text_print("愿为一片净土");
 }
 function footer_links() {
-	text_print("<a href='https://www.github.com'>GitHub</a><br>");
+	text_print("<a href='http://parea.great-site.net'>云之境</a><a href='http://pabbs.great-site.net'>论坛</a><br><a href='https://dgfiles.vercel.app/zh-CN/'>Pregnant Lover DataBase</a><a href='https://pldbmirror.destoryg.top/'>备用站</a><br><a href='https://pixiv.net'>Pixiv</a><br><a href='https://www.writing.com'>writing.com</a><br>");
 }
 function sidebox_links() {
-	text_print("<p class='main-sidebox-section-text'><a href='https://www.github.com'>GitHub</a></p>");
+	text_print("<p class='main-sidebox-section-text'><a href='http://parea.great-site.net'>云之境</a><a href='http://pabbs.great-site.net'>论坛</a></p><p class='main-sidebox-section-text'><a href='https://dgfiles.vercel.app/zh-CN/'>Pregnant Lover DataBase</a><a href='https://pldbmirror.destoryg.top/'>备用站</a></p><p class='main-sidebox-section-text'><a href='https://pixiv.net'>Pixiv</a></p><p class='main-sidebox-section-text'><a href='https://www.writing.com'>writing.com</a></p>");
 }
 function copyright() {
-	text_print("Copyright © 2020-2024 域空Hollow.All Rights Reserved.<br>域空Hollow 2020-2024 版权所有。保留所有权利。")
+	text_print("Copyright © 2022-2024 云野.All Rights Reserved.<br>Copyright © 2022-2024 Pregantain All.All rights reserved.<br>云野2022-2024版权所有。保留所有权利。")
+}
+//Library
+function lib_booksnum() {
+	text_print("38");
 }
