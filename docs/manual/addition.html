@@ -53,9 +53,19 @@
 			<p><a href="#section2-5">索引</a></p>
 			<p><a href="#section2-6">侧边栏（右）</a></p>
 		</article>
+		<h2>小部件扩展</h2>
+		<article>
+			<p><a href="#section3-1">信息盒子</a></p>
+			<p><a href="#section3-2">主题选择</a></p>
+			<p><a href="#section3-3">翻页</a></p>
+			<p><a href="#section3-4"></a></p>
+			<p><a href="#section3-5"></a></p>
+			<p><a href="#section3-6"></a></p>
+		</article>
 	</section>
 	<section id="section2">
 		<h1>扩展部件</h1>
+		<p>“扩展部件”指一些需要安装在部分位置才能正常发挥作用的部件。这通常是由于图层的覆盖关系导致的。同时，其代码也相对固定，并没有太多需要修改的地方。</p>
 		<h2>推荐位置</h2>
 		<pre><code>
 &lt;body&gt;
@@ -198,12 +208,58 @@
 	</section>
 	<section id="section3">
 		<h1>小部件扩展</h1>
-		<h2>推荐位置</h2>
-		<p><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/infobox.css">infobox.css</a></p>
+		<p>“小部件”指一些不需要安装在部分位置就能正常发挥作用的部件。</p>
+		<h2>信息盒子</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/infobox.css">infobox.css</a><br>Font Awesome
+				<p>HTML代码示例：</p>
+				<pre><code>
+&lt;div class="ib ib-yellow"&gt;&lt;div class="ib-fi ib-yellow-h"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;&lt;/div&gt;
+	&lt;div class="ib-la"&gt;&lt;big&gt;&lt;b&gt;信息盒子标题&lt;/b&gt;&lt;/big&gt;&lt;br&gt;内容&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+				<p>其中<code>ib-yellow</code><code>ib-yellow-h</code>可据情况替换为其它控制颜色的class，<code>-h</code>结尾的是图标部分的class。</p>
+				<p>预设的颜色有以下这些：</p>
+				<pre><code>
+ib-red-h
+ib-red
+ib-blue-h
+ib-blue
+ib-blue-gray-h
+ib-blue-gray
+ib-green-h
+ib-green
+ib-yellow-h
+ib-yellow
+ib-brown-h
+ib-brown-d
+ib-purple-h
+ib-purple-d-h
+ib-purple-d
+ib-purple-d-hl
+ib-purple-hl-h
+ib-purple-hl
+				</code></pre>
+				<p>purple-d配色支持高亮文字，<code>ib-purple-d-hl</code>为高亮配色。使用时代码如下：</p>
+				<pre><code>
+&lt;font class="ib-purple-d-hl"&gt;突出显示&lt;/font&gt;
+				</code></pre>
+				<p>下面是一个示例：</p>
+				<div class="ib ib-purple-d"><div class="ib-fi ib-purple-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>当然，也可以<font class="ib-purple-d-hl">突出显示</font></b></big><br>这是紫色的信息盒子。<font class="ib-purple-d-hl">这几个字</font>被highlight了~</div></div>
+				<p>代码如下：</p>
+				<pre><code>
+&lt;div class="ib ib-purple-d"&gt;&lt;div class="ib-fi ib-purple-h"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;&lt;/div&gt;
+	&lt;div class="ib-la"&gt;&lt;big&gt;&lt;b&gt;当然，也可以&lt;font class="ib-purple-d-hl"&gt;突出显示&lt;/font&gt;&lt;/b&gt;&lt;/big&gt;&lt;br&gt;这是紫色的信息盒子。&lt;font class="ib-purple-d-hl"&gt;这几个字&lt;/font&gt;被highlight了~&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+				<p><code>fa-info-circle</code>可替换为其它支持的 Font Awesome 图标。如果不会使用 Font Awesome ，可以将<code>&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;</code>直接删去。</p>
+				<p>信息盒子内容支持使用<code>&lt;b&gt;&lt;/b&gt;</code><code>&lt;i&gt;&lt;/i&gt;</code>等标签，具体效果可自行尝试。</p>
+			</article>
 	</section>
 	<section>
 		<div class="page-button-box">
-			<a class="page-button" href="index.html">上一篇</a>
+			<a class="page-button" href="quickstart.html">上一篇</a>
 			<a class="page-button" href="">下一篇</a>
 		</div>
 	</section>
