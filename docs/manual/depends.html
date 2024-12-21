@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>快速开始 - EFH5</title>
+	<title>依赖 - EFH5</title>
 	<link rel="stylesheet" type="text/css" href="../../regular.css">
 	<script type="text/javascript" language="JavaScript" src="../../jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" language="JavaScript" src="../../regular.js"></script>
@@ -28,10 +28,10 @@
 			<div class="s-b-1-2">Easy F HTML 5</div>
 		</div>
 		<div class="section0-box2">
-			<div class="s-b-2-1"><b>quick start</b></div>
-			<div class="s-b-2-2">快速开始</div>
+			<div class="s-b-2-1"><b>depends</b></div>
+			<div class="s-b-2-2">依赖</div>
 		</div>
-		<div class="section0-bottom">开始使用EFH5</div>
+		<div class="section0-bottom">EFH5的更多内容</div>
 	</section>
 		<div class="setting-box">
 			<input type="checkbox" id="darkmode-chb" class="setting-chb">
@@ -40,89 +40,115 @@
 			<label for="greenmode-chb" class="greenmode-chb-lable setting-chb-lable"></label>
 		</div>
 	<section id="section1">
-		<h1>拷贝项目</h1>
 		<article>
-			<p>想要使用EFH5，你需要先将最基础的EFH5拷贝到你要用的地方。</p>
-			<p>最基本的EFH5包含以下文件：</p>
-			<pre><code>
-index.html
-regular.css
-			</code></pre>
-			<p>当然，这只是最基本的东西，就像是毛坯房一样。一般来说，EFH5还会有像<code>icon.png</code>这样的图片以及<code>regular.js</code>和<code>jquery-3.7.1.min.js</code>两个JavaScript文件。</p>
+			<p>CSS部分建议整合进<a href="https://github.com/Hollow-YK/EFH5/blob/main/regular.css">regular.css</a>，JavaScript部分建议整合进<a href="https://github.com/Hollow-YK/EFH5/blob/main/regular.js">regular.js</a>图片建议置于/media文件夹内。若有更改，请自行适配。</p>
+			<p>此处的“依赖”并非必须，但说不定哪个扩展就会用到。另外，这里面还包含了众多优化，也非必须。</p>
 		</article>
-		<h2>获取途径</h2>
+		<h1>目录</h1>
+		<h2>依赖CSS</h2>
 		<article>
-			<p>你可以直接从Github等平台将EFH5的Releases下载到本地。</p>
-			<p>也可以在本地建立上述文件后将内容复制进去。</p>
-			<p>当然，如果你会，也可以使用Git等工具。<del>但是会用Git的人真的用得到这个项目吗？</del></p>
+			<p><a href="#section2-1">setting box</a></p>
+			<p><a href="#section2-1">page button box</a></p>
 		</article>
-		<h2>目录结构</h2>
+		<h2>美化</h2>
 		<article>
-			<p>最终，你的EFH5项目目录应该长这个样子：</p>
-			<pre><code>
-EFH5
-├─ index.html
-├─ regular.css
-├─ regular.js//可能有
-├─ jquery-3.7.1.min.js//可能有
-└─ media
-   └─ icon.png
-			</code></pre>
+			<p><a href="#section3-1">主题颜色</a></p>
+			<p><a href="#section3-2">代码显示</a></p>
+			<p><a href="#section3-3">表格美化</a></p>
+		</article>
+		<h2>动效</h2>
+		<article>
+			<p><a href="#section3-1">neon</a></p>
 		</article>
 	</section>
 	<section id="section2">
-		<h1>添加部件</h1>
-		<article>
-			<p>在完成上一步之后，你的EFH5项目应该还只有个简陋的页面。</p>
-			<p>接下来，可以去填写一些你的内容了。</p>
-			<p>下面，用文本编辑器打开<code>index.html</code>来开始内容的编辑。（这里推荐使用Sublime Text或Microsoft Visual Studio Code。当然，你想用记事本也是可以的。）</p>
-		</article>
-		<h2>section的使用</h2>
-		<article>
-			<p>EFH5页面的内容部分用<code>&lt;section&gt;&lt;/section&gt;</code>标签分成了多个部分，内容放在了section内。接下来，可以在<code>&lt;body&gt;&lt;/body&gt;</code>标签内插入<code>&lt;section&gt;&lt;/section&gt;</code>标签来创建一个section。</p>
-			<p>完成之后，body部分应该长这个样子：</p>
-			<pre><code>
-&lt;body&gt;
-&lt;div class="main-flex"&gt;
-&lt;div class="main-box"&gt;
-	&lt;section&gt;
-	&lt;/section&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-			</code></pre>
-			<p>你可能会发现，里面除了<code>&lt;body&gt;</code>和<code>&lt;section&gt;</code>标签之外，还多了两个<code>&lt;div&gt;</code>标签，并且它们还带着<code>class=""</code>这样的内容。现在你可以不用管它，这是以后会用到的工具。</p>
-		</article>
-		<h2>添加标题</h2>
-		<article>
-			<p>接下来，你可以给这个section的内容添加一个标题了。</p>
-			<p>标题用到的标签是<code>&lt;h1&gt;&lt;/h1&gt;</code>。当然，数字可以更改为其它值，用来表示标题的不同层级。</p>
-			<p>现在，试着在section中放入一个内容为“首页”的标题。完成之后应该是这个样子：</p>
-			<pre><code>
-&lt;body&gt;
-&lt;div class="main-flex"&gt;
-&lt;div class="main-box"&gt;
-	&lt;section&gt;
-		&lt;h1&gt;首页&lt;/h1&gt;
-	&lt;/section&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-			</code></pre>
-		</article>
-		<h2>段落与换行</h2>
+		<h1>依赖CSS</h1>
+		<p>这部分CSS所控制的样式会多次反复使用。</p>
+		<h2 id="section2-1">setting box</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/setting_box.css">setting_box.css</a>
+				<p>与section同级。</p>
+				<p>用于提供一些简单的设置区域，一般建议2-4个选择框。</p>
+				<p>例子：<a href="addition.html#section3-2">插件-主题选择</a></p>
+			</article>
+		<h2 id="section2-2">page button box</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/page_button_box.css">page_button_box.css</a>
+				<p>与section同级。</p>
+				<p>用于上下翻页等有两个超链接按钮的情况。也可以将其配色设置为与setting box相同。不过那样setting box就又是这个的依赖了。</p>
+				<p>例子：<a href="addition.html#section3-3">插件-翻页</a></p>
+			</article>
 	</section>
 	<section id="section3">
-		<h1>快速开始</h1>
-		<article>
-			<p><code>Ctrl + A</code>，<code>Ctrl + C</code>，<code>Ctrl + V</code>即可。</p>
-			<p>如果想要更加详细的描述，请到<a href="../manual/index.html">使用手册/快速开始</a>页面。</p>
-		</article>
+		<h1>美化</h1>
+		<p>这部分CSS所控制的样式主要用于页面美化。</p>
+		<h2 id="section3-1">主题颜色</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
+				<p>用于提供一些配色的控制。</p>
+				<p>下面是<code>theme_color.css</code>中变量所代表的意义(可根据需要自行增减)：</p>
+				<table>
+					<tr>
+						<td>--text-color</td>
+						<td>默认文本颜色</td>
+					</tr>
+					<tr>
+						<td>--bgcolor</td>
+						<td>页面背景颜色</td>
+					</tr>
+					<tr>
+						<td>--section-bgcolor</td>
+						<td>section的背景颜色</td>
+					</tr>
+					<tr>
+						<td>--normal-header-bgcolor</td>
+						<td><a href="addition.html#section2-2">页首</a>背景颜色</td>
+					</tr>
+					<tr>
+						<td>--flex-header-bgcolor</td>
+						<td><a href="addition.html#section2-4">导航栏（上）</a>背景颜色</td>
+					</tr>
+					<tr>
+						<td>--flex-header-shadow-color</td>
+						<td><a href="addition.html#section2-4">导航栏（上）</a>下方光晕颜色</td>
+					</tr>
+					<tr>
+						<td>--main-sidebox-section-text-color</td>
+						<td><a href="addition.html#section2-6">侧边栏（右）</a>默认文本颜色</td>
+					</tr>
+					<tr>
+						<td>--main-sidebox-section-text-a-color</td>
+						<td><a href="addition.html#section2-6">侧边栏（右）</a>超链接颜色</td>
+					</tr>
+					<tr>
+						<td>--setting-box-bgcolor</td>
+						<td><a href="#section2-1">setting box</a>背景颜色</td>
+					</tr>
+					<tr>
+						<td>--table-bgcolor1</td>
+						<td><a href="#section3-3">表格美化</a>背景颜色1</td>
+					</tr>
+					<tr>
+						<td>--table-bgcolor2</td>
+						<td><a href="#section3-3">表格美化</a>背景颜色2</td>
+					</tr>
+				</table>
+			</article>
+		<h2 id="section3-1">代码显示</h2>
+			<article>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/code.css">code.css</a>
+				<p>用于提供代码块（<code>&lt;pre&gt;</code>与<code>&lt;code&gt;</code>）的样式。</p>
+				<p>下面是<code>theme_color.css</code>中变量所代表的意义(可根据需要自行增减)：</p>
+			</article>
 	</section>
 	<section>
 		<div class="page-button-box">
-			<a class="page-button" href="index.html">上一篇</a>
-			<a class="page-button" href="depends.html">下一篇</a>
+			<a class="page-button" href="quickstart.html">上一篇</a>
+			<a class="page-button" href="addition.html">下一篇</a>
 		</div>
 	</section>
 </div>

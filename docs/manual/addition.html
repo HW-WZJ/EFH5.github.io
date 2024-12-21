@@ -65,7 +65,7 @@
 	</section>
 	<section id="section2">
 		<h1>扩展部件</h1>
-		<p>“扩展部件”指一些需要安装在部分位置才能正常发挥作用的部件。这通常是由于图层的覆盖关系导致的。同时，其代码也相对固定，并没有太多需要修改的地方。</p>
+		<p>“扩展部件”指一些需要安装在特定或部分位置才能正常发挥作用的部件。这通常是由于图层的覆盖关系导致的。同时，其代码也相对固定，并没有太多需要修改的地方。</p>
 		<h2>推荐位置</h2>
 		<pre><code>
 &lt;body&gt;
@@ -93,6 +93,8 @@
 			</article>
 		<h2 id="section2-2">页首</h2>
 			<article>
+				<p>依赖：</p>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
 				<p>附加内容：</p>
 				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/header.css">header.css</a><br>icon-square.png
 				<p>HTML代码：</p>
@@ -113,6 +115,8 @@
 			</article>
 		<h2 id="section2-3">页脚</h2>
 			<article>
+				<p>依赖：</p>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
 				<p>附加内容：</p>
 				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/footer.css">footer.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/footer.js">footer.js</a>
 				<p>HTML代码：</p>
@@ -136,6 +140,8 @@
 			</article>
 		<h2 id="section2-4">导航栏（上）</h2>
 			<article>
+				<p>依赖：</p>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
 				<p>附加内容：</p>
 				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/flex_header.css">flex_header.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/flex_header.js">flex_header.js</a><br>icon.png
 				<p>HTML代码：</p>
@@ -205,14 +211,48 @@
 	&lt;/script&gt;
 				</code></pre>
 			</article>
+		<h2 id="section2-6">侧边栏（右）</h2>
+			<article>
+				<p>依赖：</p>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/main_sidebox.css">main_sidebox.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/flex_header.js">flex_header.js</a><br>icon.png
+				<p>HTML代码：</p>
+				<pre><code>
+&lt;div class="main-sidebox"&gt;
+	&lt;div class="main-sidebox-section"&gt;
+		&lt;div class="main-sidebox-section-h"&gt;标题&lt;/div&gt;
+		&lt;p class="main-sidebox-section-text"&gt;内容&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+				<p>在侧边栏中可以使用多个<code>main-sidebox-section</code>，放在<code>main-sidebox</code>里面即可。每一个<code>main-sidebox-section</code>里面也可以有多个段落（放在<code>&lt;p class="main-sidebox-section-text"&gt;内容&lt;/p&gt;</code>里面）。</p>
+				<p>在标题和内容中，可以使用 Font Awesome 图标，也可以使用图片。</p>
+				<p>以EFH5的侧边栏为例，HTML代码如下：</p>
+				<pre><code>
+&lt;div class="main-sidebox"&gt;
+	&lt;div class="main-sidebox-section"&gt;
+		&lt;div class="main-sidebox-section-h"&gt;EFH5&lt;/div&gt;
+		&lt;div class="main-sidebox-siteicon-pic"&gt;&lt;/div&gt;
+		&lt;p class="main-sidebox-section-text"&gt;人人都可开始的Web页面&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class="main-sidebox-section"&gt;
+		&lt;div class="main-sidebox-section-h"&gt;&lt;i class="fas fa-link"&gt;&lt;/i&gt;友情链接&lt;/div&gt;
+		&lt;script&gt;sidebox_links();&lt;/script&gt;&lt;noscript&gt;这里需要使用 JavaScript 进行加载！&lt;/noscript&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+				<p>这里还使用了JavaScript以做到可以轻松更换友情链接。</p>
+			</article>
 	</section>
 	<section id="section3">
 		<h1>小部件扩展</h1>
-		<p>“小部件”指一些不需要安装在部分位置就能正常发挥作用的部件。</p>
-		<h2>信息盒子</h2>
+		<p>“小部件”指一些不需要安装在特定位置，而是在部分或任意位置就能正常发挥作用的部件。</p>
+		<h2 id="section3-1">信息盒子</h2>
 			<article>
 				<p>附加内容：</p>
 				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/infobox.css">infobox.css</a><br>Font Awesome
+				<p>推荐位置：section下一级</p>
 				<p>HTML代码示例：</p>
 				<pre><code>
 &lt;div class="ib ib-yellow"&gt;&lt;div class="ib-fi ib-yellow-h"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;&lt;/div&gt;
@@ -246,20 +286,41 @@ ib-purple-hl
 &lt;font class="ib-purple-d-hl"&gt;突出显示&lt;/font&gt;
 				</code></pre>
 				<p>下面是一个示例：</p>
-				<div class="ib ib-purple-d"><div class="ib-fi ib-purple-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>当然，也可以<font class="ib-purple-d-hl">突出显示</font></b></big><br>这是紫色的信息盒子。<font class="ib-purple-d-hl">这几个字</font>被highlight了~</div></div>
+				<div class="ib ib-purple-d"><div class="ib-fi ib-purple-h"><i class="fas fa-info-circle"></i></div><div class="ib-la"><big><b>当然，也可以<font class="ib-purple-d-hl">突出显示</font></b></big><br>这是紫色的信息盒子。<br><font class="ib-purple-d-hl">这几个字</font>被highlight了~</div></div>
 				<p>代码如下：</p>
 				<pre><code>
 &lt;div class="ib ib-purple-d"&gt;&lt;div class="ib-fi ib-purple-h"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;&lt;/div&gt;
-	&lt;div class="ib-la"&gt;&lt;big&gt;&lt;b&gt;当然，也可以&lt;font class="ib-purple-d-hl"&gt;突出显示&lt;/font&gt;&lt;/b&gt;&lt;/big&gt;&lt;br&gt;这是紫色的信息盒子。&lt;font class="ib-purple-d-hl"&gt;这几个字&lt;/font&gt;被highlight了~&lt;/div&gt;
+	&lt;div class="ib-la"&gt;&lt;big&gt;&lt;b&gt;当然，也可以&lt;font class="ib-purple-d-hl"&gt;突出显示&lt;/font&gt;&lt;/b&gt;&lt;/big&gt;&lt;br&gt;这是紫色的信息盒子。&lt;br&gt;&lt;font class="ib-purple-d-hl"&gt;这几个字&lt;/font&gt;被highlight了~&lt;/div&gt;
 &lt;/div&gt;
 				</code></pre>
 				<p><code>fa-info-circle</code>可替换为其它支持的 Font Awesome 图标。如果不会使用 Font Awesome ，可以将<code>&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;</code>直接删去。</p>
 				<p>信息盒子内容支持使用<code>&lt;b&gt;&lt;/b&gt;</code><code>&lt;i&gt;&lt;/i&gt;</code>等标签，具体效果可自行尝试。</p>
 			</article>
+		<h2 id="section3-1">主题选择</h2>
+			<article>
+				<p>依赖：</p>
+				<a href="depends.html#section2-1">setting box</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/setting_box.css">setting_box.css</a><br>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/theme_select.css">theme_select.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/theme_select.js">theme_select.js</a>
+				<p>推荐位置：section同级</p>
+				<p>HTML代码示例：</p>
+				<pre><code>
+&lt;div class="setting-box"&gt;
+	&lt;input type="checkbox" id="darkmode-chb" class="setting-chb"&gt;
+	&lt;label for="darkmode-chb" class="darkmode-chb-lable setting-chb-lable"&gt;&lt;/label&gt;
+	&lt;input type="checkbox" id="greenmode-chb" class="setting-chb"&gt;
+	&lt;label for="greenmode-chb" class="greenmode-chb-lable setting-chb-lable"&gt;&lt;/label&gt;
+&lt;/div&gt;
+				</code></pre>
+				<p>此处给出的主题有三种，分别为默认的<code>colorfulmode</code>、深色主题<code>darkmode</code>和绿色主题<code>greenmode</code>。主题的相关配色都在<code>theme_select.css</code>里面进行设置。当然，你也可以为你的EFH5增添更多主题配色。</p>
+				<p>各个按钮的状态以及主题的切换都是由<code>theme_select.js</code>控制的，所以要添加主题配色或者更改其名称需要一并调整<code>theme_select.js</code>。</p>
+				<p>另外，若要实现自动切换深色主题（部分支持），需要将<code>theme_select.css</code>中<code>/* Basic Styles */</code>部分放在最先加载的部分（即<code>regular.css</code>的最前；或者在HTML中作为第一个载入的stylesheet）。</p>
+		</article>
 	</section>
 	<section>
 		<div class="page-button-box">
-			<a class="page-button" href="quickstart.html">上一篇</a>
+			<a class="page-button" href="depends.html">上一篇</a>
 			<a class="page-button" href="">下一篇</a>
 		</div>
 	</section>
