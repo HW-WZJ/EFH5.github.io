@@ -296,7 +296,7 @@ ib-purple-hl
 				<p><code>fa-info-circle</code>可替换为其它支持的 Font Awesome 图标。如果不会使用 Font Awesome ，可以将<code>&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;</code>直接删去。</p>
 				<p>信息盒子内容支持使用<code>&lt;b&gt;&lt;/b&gt;</code><code>&lt;i&gt;&lt;/i&gt;</code>等标签，具体效果可自行尝试。</p>
 			</article>
-		<h2 id="section3-1">主题选择</h2>
+		<h2 id="section3-2">主题选择</h2>
 			<article>
 				<p>依赖：</p>
 				<a href="depends.html#section2-1">setting box</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/setting_box.css">setting_box.css</a><br>
@@ -316,6 +316,26 @@ ib-purple-hl
 				<p>此处给出的主题有三种，分别为默认的<code>colorfulmode</code>、深色主题<code>darkmode</code>和绿色主题<code>greenmode</code>。主题的相关配色都在<code>theme_select.css</code>里面进行设置。当然，你也可以为你的EFH5增添更多主题配色。</p>
 				<p>各个按钮的状态以及主题的切换都是由<code>theme_select.js</code>控制的，所以要添加主题配色或者更改其名称需要一并调整<code>theme_select.js</code>。</p>
 				<p>另外，若要实现自动切换深色主题（部分支持），需要将<code>theme_select.css</code>中<code>/* Basic Styles */</code>部分放在最先加载的部分（即<code>regular.css</code>的最前；或者在HTML中作为第一个载入的stylesheet）。</p>
+		</article>
+		<h2 id="section3-3">翻页</h2>
+			<article>
+				<p>依赖：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/page_button.css">page_button.css</a><br>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
+				<p>附加内容：</p>
+				<p>无</p>
+				<p>推荐位置：section同级</p>
+				<p>HTML代码示例：</p>
+				<pre><code>
+&lt;section&gt;
+	&lt;div class="page-button-box"&gt;
+		&lt;a class="page-button" href=""&gt;上一篇&lt;/a&gt;
+		&lt;a class="page-button" href=""&gt;下一篇&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+				</code></pre>
+				<p>在相应的<code>href=""</code>的引号内输入链接即可。</p>
+				<p>建议放在文章结尾和开头。</p>
 		</article>
 	</section>
 	<section>
@@ -373,9 +393,9 @@ ib-purple-hl
 		<div id="nav-box">
 			<ul>
 				<li class="page-nav-li"><a href="#section0" id="pnav0" class="page-nav-a page-nav-at">页首</a></li>
-				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">认识EFH5</a></li>
-				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">应用案例</a></li>
-				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">推荐</a></li>
+				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">目录</a></li>
+				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">扩展部件</a></li>
+				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">小部件扩展</a></li>
 				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
 			</ul>
 		</div>
