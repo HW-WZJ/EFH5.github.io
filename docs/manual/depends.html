@@ -58,7 +58,11 @@
 		</article>
 		<h2>动效</h2>
 		<article>
-			<p><a href="#section3-1">neon</a></p>
+			<p><a href="#section4-1">neon</a></p>
+		</article>
+		<h2>针对性美化</h2>
+		<article>
+			<p><a href="#section5-1">文章美化</a></p>
 		</article>
 	</section>
 	<section id="section2">
@@ -155,7 +159,7 @@
 	<section id="section4">
 		<h1>动效</h1>
 		<p>这部分CSS所控制部分动画效果。</p>
-		<h2 id="section3-1">neon</h2>
+		<h2 id="section4-1">neon</h2>
 			<article>
 				<p>附加内容：</p>
 				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/neon.css">neon.css</a>
@@ -178,6 +182,95 @@
 						<td>#64FF32</td>
 					</tr>
 				</table>
+			</article>
+	</section>
+	<section id="section5">
+		<h1>针对性美化</h1>
+		<p>这部分CSS主要针对某特定用途进行美化。建议在项目的某部分使用。</p>
+		<h2 id="section5-1">文章美化</h2>
+			<article>
+				<p>依赖：</p>
+				<a href="#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/article.css">article.css</a>
+				<p>主要提供了对文章的排版、字体等的美化。</p>
+				<p>可以在博客、书库等方面使用。</p>
+				<p>提供了书籍信息部分的美化，布局为左侧封面图片，右侧信息排列。</p>
+				<p>提供了书籍目录部分的美化，共支持三级目录，不同层级之间有缩进关系。</p>
+				<p>目录内容应在<code>&lt;div class="content-box"&gt;&lt;/div&gt;</code>内，<code>&lt;div class="content-box"&gt;&lt;/div&gt;</code>作为<code>section</code>下一级。</p>
+				<p>另外支持在目录中标记缺失部分，在原本class后加上<code>-</code>即可。详情见下表。</p>
+				<table>
+					<tr>
+						<th>class</th>
+						<th>层级</th>
+						<th>备注</th>
+					</tr>
+					<tr>
+						<td>content1</td>
+						<td>一级目录</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>content1-</td>
+						<td>一级目录</td>
+						<td>内容缺失</td>
+					</tr>
+					<tr>
+						<td>content2</td>
+						<td>二级目录</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>content2-</td>
+						<td>二级目录</td>
+						<td>内容缺失</td>
+					</tr>
+					<tr>
+						<td>content3</td>
+						<td>三级目录</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>content3-</td>
+						<td>三级目录</td>
+						<td>内容缺失</td>
+					</tr>
+				</table>
+				<p>应用示例：</p>
+		<pre><code>
+&lt;section id="section3"&gt;
+		&lt;h1&gt;&lt;a name="book"&gt;题目&lt;/a&gt;&lt;/h1&gt;
+	&lt;div class="bookinfo"&gt;
+		&lt;img src="../cover/default.png" class="cover"&gt;
+		&lt;div class="bookinfo-box"&gt;
+			书号：&lt;br&gt;
+			作者：&lt;br&gt;
+			字符数：&lt;span class="booksize-more"&gt;+未计算&lt;/span&gt;&lt;br&gt;
+			时间：&lt;br&gt;
+			更新状态：&lt;br&gt;
+			简介：&lt;br&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="content-box"&gt;
+		&lt;h2&gt;目录&lt;/h2&gt;
+		&lt;a href="#chapter1" class="content1"&gt;第一卷&lt;/a&gt;&lt;br&gt;
+		&lt;a href="#chapter1-1" class="content2"&gt;第一章&lt;/a&gt;&lt;br&gt;
+		&lt;a href="#chapter1-2" class="content2"&gt;第二章&lt;/a&gt;&lt;br&gt;
+		&lt;a href="#chapter2" class="content1"&gt;第二卷&lt;/a&gt;&lt;br&gt;
+		&lt;a href="#chapter2-1" class="content2"&gt;第二章&lt;/a&gt;&lt;br&gt;
+	&lt;/div&gt;
+	&lt;article&gt;
+		&lt;h2&gt;&lt;a id="chapter1"&gt;第一卷&lt;/a&gt;&lt;/h2&gt;
+		&lt;h3&gt;&lt;a id="chapter1-1"&gt;第一章&lt;/a&gt;&lt;/h3&gt;
+		&lt;p&gt;正文&lt;/p&gt;
+		&lt;h3&gt;&lt;a id="chapter1-2"&gt;第二章&lt;/a&gt;&lt;/h3&gt;
+		&lt;p&gt;正文&lt;/p&gt;
+		&lt;h2&gt;&lt;a id="2"&gt;第二卷&lt;/a&gt;&lt;/h2&gt;
+		&lt;h3&gt;&lt;a id="chapter2-1"&gt;第一章&lt;/a&gt;&lt;/h3&gt;
+		&lt;p&gt;正文&lt;/p&gt;
+	&lt;/article&gt;
+&lt;/section&gt;
+		</code></pre>
 			</article>
 	</section>
 	<section>
