@@ -61,9 +61,7 @@
 		</article>
 		<h2>针对性扩展</h2>
 		<article>
-			<p><a href="#section3-1">信息盒子</a></p>
-			<p><a href="#section3-2">主题选择</a></p>
-			<p><a href="#section3-3">翻页</a></p>
+			<p><a href="#section4-1">bookcard</a></p>
 		</article>
 	</section>
 	<section id="section2">
@@ -347,6 +345,26 @@ ib-purple-hl
 				<p>建议放在文章结尾和开头。</p>
 		</article>
 	</section>
+	<section id="section4">
+		<h1>针对性扩展</h1>
+		<p>这些扩展主要是对某一个或几个<a href="depends.html#section5">针对性美化</a>依赖的扩展。</p>
+		<h2 id="section3-3">bookcard</h2>
+			<article>
+				<p>依赖：</p>
+				<a href="depends.html#section3-1">主题颜色</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/theme_color.css">theme_color.css</a><br>
+				<a href="depends.html#section5-1">文章美化</a><a href="https://github.com/Hollow-YK/EFH5/blob/main/depends/article.css">article.css</a>
+				<p>附加内容：</p>
+				<a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/bookcard.css">bookcard.css</a><br><a href="https://github.com/Hollow-YK/EFH5/blob/main/addition/bookcard.js">bookcard.js</a>
+				<p>HTML代码：</p>
+				<pre><code>
+				</code></pre>
+		</article>
+	</section>
+	<section id="section5">
+		<article>
+			<p>后面的内容，以后再来探索吧！</p>
+		</article>
+	</section>
 	<section>
 		<div class="page-button-box">
 			<a class="page-button" href="depends.html">上一篇</a>
@@ -405,6 +423,8 @@ ib-purple-hl
 				<li class="page-nav-li"><a href="#section1" id="pnav1" class="page-nav-a">目录</a></li>
 				<li class="page-nav-li"><a href="#section2" id="pnav2" class="page-nav-a">扩展部件</a></li>
 				<li class="page-nav-li"><a href="#section3" id="pnav3" class="page-nav-a">小部件扩展</a></li>
+				<li class="page-nav-li"><a href="#section4" id="pnav4" class="page-nav-a">针对性扩展</a></li>
+				<li class="page-nav-li"><a href="#section5" id="pnav5" class="page-nav-a">施工中</a></li>
 				<li class="page-nav-li"><a href="#" class="page-nav-a">回到顶部</a></li>
 			</ul>
 		</div>
@@ -414,7 +434,7 @@ ib-purple-hl
 					//为页面添加页面滚动监听事件
 					var wst = $(window).scrollTop() //滚动条距离顶端值
 					console.log("滚动条距离顶端值:" + wst)
-					var len = 4;
+					var len = 6;
 					for (i = 0; i < len; i++) { //加循环
 						console.log("section" + i + "距离顶端值:" + $("#section" + i).offset().top);
 						var next = i + 1;
